@@ -33,19 +33,21 @@ for i in range (0,len((julday)),1):
 #or 
 #wait_time = np.diff(julday)*24*60
 
-plt.plot(waittingtime)
+plt.plot(wait_time)
 plt.show()
 
 # -- calculate mean time --
 
-
+mean_wait_time = np.mean(wait_time)
 
 # -- plot waiting time after eruptions/ duration of bursts vs. time --
-plot
+plt.plot(jul_day, wait_time)
+plt.show()
 
 
 # -- plot histogram of the intereruption times (1 h bins) -- 
-hist
+
+plt.hist(wait_time)
 
 
 
